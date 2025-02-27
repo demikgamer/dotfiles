@@ -1,0 +1,81 @@
+{
+  "layer": "top",
+  "position": "top",
+  "height": 5,
+
+  "modules-left": [
+    "custom/clock",
+    "custom/sep",
+    "tray"
+  ],
+  "modules-center": [
+    "sway/workspaces"
+  ],
+  "modules-right": [
+    "sway/language",
+    "custom/sep",
+    "memory",
+    "custom/sep",
+    "pulseaudio",
+  ],
+  "custom/sep": {
+	  "format": ""
+   // "format": ""
+  },
+    
+  "sway/workspaces": {
+    "format": "{icon}",
+    "on-click": "activate",
+    "on-scroll-up": "hyprctl dispatch workspace e-1",
+    "on-scroll-down": "hyprctl dispatch workspace e+1",
+    "format-icons": {
+      "focused": "   ",
+      "urgent": "   ",
+      "default": "   "
+    }
+  },
+
+
+  "custom/clock": {
+    "exec": "date +'%d.%b %H:%M'",
+    "interval": 10
+},
+
+  "tray": {
+    "icon-size": 18,
+	"spacing": 10,
+    "show-passive-items": "true"
+  },
+  "sway/language": {
+    "format": "{}",
+    "format-en": "EN",
+    "format-ru": "RU",
+  },
+
+  "memory": {
+	"interval": 30,
+	"format": "{}% ",
+	"max-length": 10
+   },
+
+  "pulseaudio": { 
+    "format": "{icon} {volume}%",
+    "format-bluetooth": "{icon} {volume}%",
+    "format-muted": "MUTE ",
+    "format-icons": {
+      "headphones": "",
+      "handsfree": "",
+      "headset": "",
+      "phone": "",
+      "portable": "",
+      "car": "",
+      "default": [
+        "",
+        ""
+      ]
+    },
+    "scroll-step": 3,
+    "on-click": "pavucontrol",
+    "on-click-right": "pactl set-source-mute @DEFAULT_SOURCE@ toggle"
+  }
+}
