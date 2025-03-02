@@ -36,6 +36,17 @@ exec gentoo-pipewire-launcher
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
 set $wallpapers_path $HOME/wallpapers
 output * bg $(find $wallpapers_path -type f | shuf -n 1) fill
+
+### Fx
+exec python3.12 /usr/bin/trans.py
+#blur_contrast 1.9t
+blur_noise 0.01
+blur_passes 1
+shadows enable
+blur enable
+default_dim_inactive 0.2
+
+
 #
 # Example configuration:
 #
