@@ -10,14 +10,12 @@ window#waybar {
   color: #a5adcb;
 }
 .modules-left {
-  border-radius: 8px;
+  border-radius: 0px;
   background: #000000;
-  padding: 3px 0;
   	}
 .modules-right {
-  border-radius: 8px;
+  border-radius: 0px;
   background: #000000;
-  padding: 3px 0;
   	}
 .modules-center {
   border-radius: 3px;
