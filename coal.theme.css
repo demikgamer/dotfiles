@@ -1,0 +1,50 @@
+/**
+ * @name coal
+ * @author FeoreV
+ * @version 2.0.0
+ * @description Blur is the new black
+ * @source https://github.com/FeoreV/Themes/tree/main/Discord/FVUI
+ * @invite baEMQkgswT
+ * @website https://feorev.github.io/
+ * @authorId 489785940546551831
+ * @BDEditor FVUI
+*/
+
+@import url('https://feorev.github.io/Themes/Discord/FVUI/Cores/preload.css');
+@import url('https://feorev.github.io/Themes/Discord/FVUI/assets/SubThemes/CustomBackground.css');
+@import url('https://feorev.github.io/Themes/Discord/FVUI/Addons/ModularDesign.css');
+@import url('https://feorev.github.io/Themes/Discord/FVUI/Addons/Events/Events.css');
+@import url('https://feorev.github.io/Themes/Discord/FVUI/Addons/RadialStatus.css');
+@import url('https://feorev.github.io/Themes/Discord/FVUI/Addons/HSL/HSL_bottom.css');
+
+:root {
+  --undefined: 0;
+  --color1: 30, 40, 50;
+  --color2: 9, 18, 24;
+  --color3: 62,159,156;
+  --undefined: 0;
+  --ColorOpacity: 1;
+  --DisableOpacity: 0;
+  --cursor: url('https://feorev.github.io/Themes/Discord/FVUI/assets/Cursor.cur');
+  --font: GohuFont uni14 Nerd Font;
+  --homeicon: url('https://feorev.github.io/Themes/Discord/FVUI/assets/HomeIcon/Icon.png');
+  --undefined: 0;
+  --FVUI: var(--subtheme);
+  --customdesc: "";
+  --image: url('https://imgur.com/ElI3qDU.png');
+  --OpacityBG: 50%;
+  --BlurBG: 0px;
+  --undefined: 0;
+  --outline: 3px;
+  --outlineCLR: var(--color03);
+  --outlineBR: 16px;
+  --outlineMG: 2rem;
+  --outlineBS: 16px;
+  --outlineBGclr: unset;
+  --outlineBGalpha: 1;
+  --outlineBLUR: "";
+}
+
+/* Any custom CSS below here */
+
+
